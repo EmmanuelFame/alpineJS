@@ -1,0 +1,17 @@
+1. I started learning alpine JS from Traversy media YT channel
+x-data, x-on, x-on:click, x-text, x-show, x-cloak(which is used inside the style element)
+we use x-transition besides the x-show for smoother transition
+x-effects: x-effect="console.log(open)", alert(open), 
+x-bind: x-bind:class="open ? 'bg-blue-800': 'bg-slate-700' " This will toggle the class open by changing the colors when clicked.
+and it will still work if we remove the x-bind but leave alone the : 
+2. the next thing I am learning is the x-model, I first added search attribute to x-data and give it an empty string as the value. and then I set x-model="search", The teacher mentioned it's similar to ng model
+3.  the next is the x-if and the x-for attributes 
+4. the next is the x-ref attribute with which we can access elements directly. we can use this magic property with div, input, button etc. and we can change their properties using the syntax ("$refs.element.property_we_want_to_change=value")
+I included the axios script tag so I can use it together with the x-html attribute to link to another file.
+the next magic property besides $refs is $el, $el is used to accesss the current property, $refs can be used to access any properties.
+there's x-init which fires up a javascript once initialized. and we can use this with $watch to watch our post in this kind of syntax x-init="$watch('posts', value => console.log(value))" , the watch is very good for watching over an event.
+the next is $dispatch, the teacher mentioned that it's a shortcut for dispatching browser events.
+the next magic property is $data, it's very useful if there's a javascript file outside that I want to access, I can acess and use it with the $data magic properties.
+the next one is store, which is how to store data on the client side.
+
+<!-- <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/479561"><span style="color:gray;">Current local time in</span><br />Ufa, Russia</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FYekaterinburg" width="100%" height="115" frameborder="0" seamless></iframe> </div> --> it is a code for time not related to alpineJS.
